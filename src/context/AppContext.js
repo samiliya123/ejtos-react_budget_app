@@ -43,6 +43,7 @@ export const AppReducer = (state, action) => {
                     ...state,
                     expenses: [...red_expenses],
                 };
+              
             case 'DELETE_EXPENSE':
             action.type = "DONE";
             state.expenses.map((currentExp)=> {
@@ -88,7 +89,7 @@ const initialState = {
     ],
     currency: '£'
 };
-
+ 
 // 2. Creates the context this is the thing our components import and use to get the state
 export const AppContext = createContext();
 

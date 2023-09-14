@@ -9,23 +9,47 @@ import Budget from './components/Budget';
 
 
 import { AppProvider } from './context/AppContext';
+import ExpenseTotal from './components/ExpenseTotal';
+import Remaining from './components/Remaining';
+import ExpenseList from './components/ExpenseList';
+import ExpenseItem from './components/ExpenseItem';
+import AllocationForm from './components/AllocationForm';
+
 const App = () => {
     return (
         <AppProvider>
             <div className='container'>
+                 
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                     <div className='row mt-3'>
-                        {/* Add Budget component here under */}        
+                     <Budget />     
 
-                        {/* Add Remaining component here under */}        
+                        {/* Add Remaining component here under */} 
+                    
+                    <div className='col-sm'>
+                        <Remaining />
+                    </div>       
 
-                        {/* Add ExpenseTotal component here under */}        
+                        {/* Add ExpenseTotal component here under */}  
+                    
+                    <div className='col-sm'>
+                        <ExpenseTotal/>
+                    </div>      
                        
-                        {/* Add ExpenseList component here under */}         
+                        {/* Add ExpenseList component here under */} 
+                    <div className=''> 
+                    <ExpenseList/>  
+                    </div>     
 
-                        {/* Add ExpenseItem component here under */}        
+                        {/* Add ExpenseItem component here under */} 
+                    <div className=''>
+                    <ExpenseItem/>      
+                    </div> 
 
-                        {/* Add AllocationForm component here under */}        
+                        {/* Add AllocationForm component here under */}  
+                    <div className=''>
+                    <AllocationForm/>      
+                    </div>
 
                 </div>
             </div>
